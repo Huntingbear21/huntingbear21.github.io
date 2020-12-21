@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+.button {
+  padding: 15px 32px;
+  border: none;
+  background-color: red; /* For browsers that do not support gradients
+  */
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+  vertical-align: top;
+  font-size: 16px;
+  margin-top: 2px;
+  background-image: linear-gradient(to bottom right, red, yellow);
+}
+
+.button_trans {
+  padding: 15px 32px;
+  border: none;
+  background-color: gray; /* For browsers that do not support gradients
+  */
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+  vertical-align: top;
+  font-size: 16px;
+  margin-top: 2px;
+}
+.button:hover {
+  background-color: #0000FF;
+  color: white;
+  transform:scale(.9);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.page-header {
+    background-color: #FFB883;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.titletextsize {
+    font-size: 30px;
+}
+.textsize {
+    font-size: 15px;
+}
+
+.name {
+    font-size: 20px;
+}
+
+.bigtitle {
+    font-size: 40px;
+    padding: 20px;
+}
+
+.column {
+    float: right;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    color: black;
+    background: gray;
+}
+
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테스트 페이지</title>
+</head>
+<body>
+    <font face="NanumGothic">
+        <div class="page-header">
+
+            <h1>Huntingbear21's Test Page</h1>
+        </div>
+        <p class="bigtitle">Welcome To Huntingbear21's Test Page!</p>
+        <button class="button" onclick="window.open('https://blog.naver.com/huntingbear21')">
+            <span>제 블로그 바로가기</span>
+        </button>
+        <center>
+
+            <p class="titletextsize">이 사이트의 목적</p>
+            <p class="textsize">이 사이트는 테스트용 & 공부를 위해서 만들어진 사이트입니다.</p>
+            <hr width=1000>
+            <p class="titletextsize">Developer</p>
+            <img src="assets/일러스트242.jpg" alt="My Image">
+            <p class="name">Huntingbear21</p>
+            <p class="textsize">디스코드 봇을 만들고 있는 한 사람</p>
+            <hr width=1000>
+        
+            <p class="titletextsize">그럼, 이제 곰사냥의 블로그로 들어가 볼까요?</p>
+
+            <footer class="footer" id="footer_id">
+                <div class="row">
+
+
+                    <div class="column">
+                        <button class="button" onclick="window.open('https://blog.naver.com/huntingbear21')">
+                            <span>제 블로그 바로가기</span>
+                        </button>
+                    </div>
+
+                    <div class="column">
+                        <p class="textsize">Copyright by Huntingbear21. All rights reserved.</p>
+                    </div>
+
+                    <div class="column">
+                        <button class="button", onclick="GFG_Fun()">
+                            <span>X</span>
+                        </button>
+                    </div>
+                </div>
+
+                <script>
+                    var div = document.getElementById("footer_id");
+
+                    function GFG_Fun() {
+                        div.parentNode.removeChild(div);
+                    }
+                </script>
+            </footer>
+
+        </center>
+    </font>
+
+
+</body>
+</html>
