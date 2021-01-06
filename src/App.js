@@ -35,9 +35,9 @@ class MyNav extends React.Component {
 class Section1 extends React.Component {
   render() {
     return (
-      <div className="font-nanum float-right md:grid md:p-30 xs:p-60 p-40 grid-cols-3 grid-flow-col gap-4 justify-center bg-no-repeat">
+      <div className="font-nanum float-right md:grid md:p-30 xs:p-60 p-20 grid-cols-3 grid-flow-col gap-4 justify-center bg-no-repeat">
         <div className="row-span-3">
-          <img src={profile} alt="profile" width="500" height="500" className="rounded-full"/>
+          <img src={profile} alt="profile" width="400" height="400" className="rounded-full"/>
         </div>
         <div className="col-span-2">
           <h1 className="xs:text-7xl lg:text-5xl block md:text-4xl sm:text-5xl text-4xl">안녕하세요, 곰사냥입니다.</h1>
