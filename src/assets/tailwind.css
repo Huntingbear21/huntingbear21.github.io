@@ -33,4 +33,8 @@
     background-color: #cdcdcd;
 }
 
+#menu-toggle:checked + #menu {
+  display: block;
+}
+
 @tailwind utilities;
