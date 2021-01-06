@@ -1,0 +1,57 @@
+/*Desktop responsive*/
+.logo-img {
+    width: 260px;
+    
+}
+h1 {
+    font-size: 58px !important;
+    line-height: 80%;
+    margin-top: 10px;
+  }
+
+
+
+/* Mobile Phone Responsiveness */
+
+@media screen and (max-width: 360px) {
+  h1 {
+    font-size: 12px !important;
+    line-height: 80%;
+    margin-top: 10px;
+  }
+  h2 {
+    font-size: 9px;
+    letter-spacing: 1.2px;
+  }
+  p {
+    font-size: 12px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+  h4 {
+    font-size: 8px;
+  }
+  h5 {
+    font-size: 11px;
+  }
+  .logo-img {
+    width: 160px;
+    position: absolute;
+  }
+  .main-img {
+    width: 100%;
+  }
+  .footer-img {
+   width: 100%;
+  }
+  .line {
+    width: 90%;
+  }
+  .copy {
+    font-size: 10px;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+}

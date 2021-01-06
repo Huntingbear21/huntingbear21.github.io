@@ -1,0 +1,36 @@
+@tailwind base;
+
+.font-nanum {
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+@tailwind components;
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility;
+  }
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+
+.my-button {
+    border: 1px solid black;
+    border-radius: 9999px;
+    padding: 8px 11px !important;
+    background-color: white;
+    max-width: max-content;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.my-button:hover {
+    background-color: #cdcdcd;
+}
+
+@tailwind utilities;
